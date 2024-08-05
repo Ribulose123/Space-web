@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background-home-desktop.jpg);
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding: 1rem;
+}
+
+
+.navbar-toggle ion-icon{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    cursor: pointer;
+    display:none;
+}
+
+.navbar .image-line{
+ display: flex; 
+ justify-content: space-around;
+ align-items: center;
+}
+
+.image-line img{
+    margin-left: 6rem;
+}
+.image-line .line{
+    width: 350px;
+    background-color: rgba(5, 4, 4, 0.315);
+    height:3px;
+    z-index: 100;
+    position: relative;
+    left: 3rem;
+    border-radius: 0%5px;
+}
+
+.navbar .nar-list{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.nar-list ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+.nar-list ul li{
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.nar-list ul li a{
+    text-decoration: none;
+    color: white;
+    word-spacing: 10px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+.nar-list ul li a:hover{
+    border-bottom: 1px solid gold;
+}
+
+.content-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+}
+ .content-info .content-space{
+    color: white;
+    font-family: sans-serif;
+ }
+  .content-space h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+.content-space h2{
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    width: 400px;
+    text-transform: uppercase;
+}
+
+.content-space p{
+    width: 450px;
+    word-spacing: 2px;
+}
+
+.content-info .explore{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.explore a{
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* destination */
+.header .pick-destination{
+    color:white;
+    margin-top: rem;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-left: 17rem;
+}
+.destination-name{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.destination-name ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destination-name ul li{
+    padding: 20px;
+}
+
+.destination-name ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.destination-name ul li a:hover{
+    border-bottom: 2px solid white;
+}
+
+.destination-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -1rem;
+}
+.image-moon img{
+    margin-top: -1rem;
+}
+
+.moon-content{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: white;
+    margin-top: -7rem;
+}
+
+.moon-content h2{
+    font-size: 8rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.moon-content .moon-infer{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+}
+
+.strong{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.strong p{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-family: sans-serif;
+    gap: 10px;
+}
+ .strong p strong{
+    font-size: 20px;
+    text-transform: uppercase;
+ }
+
+ .strong p span{
+    font-size: 28px;
+    text-transform: uppercase;
+ }
+
+/* crew */
+
+.crew-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.crew-details{
+    width: 500px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.crew-details h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.crew-details h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.crew-details p{
+    width: 400px;
+}
+
+.crew-image-wrapper img{
+    max-width: 350px;
+    max-height: 350px;
+    margin-top: 2rem;
+}
+.crew-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.crew-indicators button {
+    background-color: gray;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.crew-indicators button.active {
+    background-color: black;
+}
+
+/* technology */
+
+.technology-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.technology-indicators{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.technology-indicators button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+}
+
+.technology-indicators button.active1:nth-child(1) {
+    background-color: #ff0000; /* Red for the first button */
+}
+
+.technology-indicators button.active1:nth-child(2) {
+    background-color: #00ff00; /* Green for the second button */
+}
+
+.technology-indicators button.active1:nth-child(3) {
+    background-color: #0000ff; /* Blue for the third button */
+}
+
+
+
+
+.technology-slider{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.technology-slider h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.technology-slider h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.technology-slider p{
+    width: 450px;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.technology-image-wrapper img{
+    width: 600px;
+    height: 400px;
+}
+
+ @media (max-width: 768px){
+    .header{
+        background-image: url(images/background-home-mobile.jpg);
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .navbar-toggle {
+        margin-top: 1rem;
+        /* margin-left: -5rem;
+ */
+    }
+    .navbar-toggle ion-icon{
+        display: block;
+    }
+
+    .navbar .image-line{
+        display: none;
+    }
+    .navbar .nar-list{
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .nar-list ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .navbar-active{
+        display: block;
+    }
+
+    .header .pick-destination{
+        text-align: center;
+    }
+
+    /* destination-content */
+
+    .destination-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .destination-details{
+        display: flex; 
+        flex-direction:column;
+    }
+    .destination-name ul{
+       margin-left: 9rem;
+    }
+
+    .image-moon img{
+        margin-top: 1rem;
+    }
+    
+    .moon-content{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        color: white;
+        margin-top: -2rem;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    
+    .moon-content h2{
+        font-size: 4rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .moon-content .moon-infer{
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-bottom: 2rem;
+    }
+    
+ }

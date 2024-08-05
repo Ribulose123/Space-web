@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="syle.css">
+    
+    <title>Frontend Mentor | Space tourism website</title>
+    <script  defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            
+            <div class="image-line">
+              <img src="images/logo.svg" alt="">
+              <div class="line"></div>
+            </div>
+            
+            <div class="nar-list">
+              <ul>
+                <li><a href="index.html">00 Home</a></li>
+                <li><a href="destinations.html">01 Destination</a></li>
+                <li><a href="crew.html">02 Crew</a></li>
+                <li><a href="technology.html">03 Technology</a></li>
+              </ul>
+            </div>
+            <div class="navbar-toggle">
+              <ion-icon name="list-outline"></ion-icon>
+            </div>
+          </nav>
+          <div class="pick-destination">
+            <p>01 pick your destination</p>
+        </div>
+
+        <div class="destination-content" >
+            <div class="destination-name">
+                <ul id="name-info" class>
+
+                </ul>
+            </div>
+            <div class="destination-details">
+                <div class="image-moon">
+                    <img id="destination-image" src="" alt="Destination Image">
+                </div>
+               <div class="moon-content">
+                <h2 id="destination-name"></h2>
+                <p id="destination-description" class="moon-infer"></p>
+                <div class="strong">
+                    <p><strong>Distance:</strong> <span id="destination-distance"></span></p>
+                <p><strong>Travel Time:</strong> <span id="destination-travel"></span></p>
+                </div>
+               </div>
+            </div>
+        </div>
+    </header>
+
+   
+
+    
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
